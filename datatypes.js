@@ -8,4 +8,4 @@ function swapNumbers(num1, num2) {
     return [num2, num1];
 }
 swapNubs = swapNumbers(10, 20);
-swapNubs[0];
+swapNubs[1];

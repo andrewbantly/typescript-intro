@@ -19,4 +19,4 @@ function swapNumbers(num1:number,num2:number): [number,number] {
 
 swapNubs = swapNumbers(10, 20);
 
-swapNubs[0];
+swapNubs[1]

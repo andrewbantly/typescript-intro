@@ -22,3 +22,7 @@ const multiREST = function (num1, num2, ...num3) {
 };
 let numbers = [1, 2, 4, 56, 7];
 console.log(multiREST(2, 10, ...numbers));
+function getItems(items) {
+    return new Array().concat(items);
+}
+let concatResult = getItems([1, 2, 3, 4, 5]);

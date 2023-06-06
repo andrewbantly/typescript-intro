@@ -1,3 +1,5 @@
+import { Login, User } from "./interface";
+
 class Employee {
     id!: number;
     name!: string;
@@ -12,7 +14,7 @@ john.address = "Highway 101";
 
 console.log(john)
 
-class Friend {
+class Friend implements Login {
     // adding a # before the property will make it a private property - it won't be read
     #id: number;
     // protected implies that the method or property is accessible only internally within the class or any class that extends it but not externally.
@@ -36,6 +38,9 @@ class Friend {
 
     static getFriendCount(): number {
         return 10;
+    }
+    login(): User {
+        return { name: "Murphy", age: 2, id: 4}
     }
 }
 
